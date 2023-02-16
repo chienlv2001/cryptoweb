@@ -1,0 +1,147 @@
+.n-wrapper {
+  height: fit-content;
+  top: 0;
+  left: 0;
+
+  display: flex;
+    z-index: 3;
+    gap: 10px;
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding: 8px 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.n-list {
+  /* flex: 10; */
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+.title-bar{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 2px;
+  transition: all 0.15s ease-in-out 0s;
+  margin-left: 30px;
+
+}
+
+.form-container{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+
+}
+
+.keping-ai-logo{
+  height: 34px;
+  width: 34px;
+  filter: none;}
+
+.text-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.medium {
+  display: flex;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.small {
+  display: flex;
+  font-size: 14px;
+}
+
+.divider{
+  display: flex;
+  height: 30px;
+  background: rgb(210, 210, 210);
+  width: 1px;
+}
+
+.pills-outer{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  gap: 8px;
+}
+
+.pills-inner{
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.item-outer{
+  display: flex;
+  padding: 2px 8px;
+  width: fit-content;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.item-inner{
+  padding: 2px;
+}
+
+.auth-group-container{
+  display: flex;
+  flex-direction: row;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}
